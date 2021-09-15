@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <meta charset="UTF-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel='stylesheet' href = '../_css/index.css'>
+  <script src = '../_script/script-01.js' defer></script>
+  <head>
+    <title> Projeto - 1: Calculadora de média </title>
+  </head>
+  <body>
+    <header>
+      <nav class = 'navbar navbar-dark' style="background-color: #605D18;">
+        <a class="navbar-brand">
+          <img src = '../_img/html-5.png' width="40" height="40" alt = "">
+          <img src = '../_img/css.png' width="40" height="40" alt = "">
+          Meu primeiro site com bootstrap
+        </a>
+      </nav>
+    </header>
+    <section class = 'box'>
+      <div class = 'container'>
+        <div class='row'>
+          <div class='d-flex justify-content-around'>
+              <h1 class = 'title-page' style="margin: 10px;"><strong>Cálculo da média da matéria [X]</strong></h1>
+              <img class = 'img-fluid' src = '../_img/grades.png' width="70" height="70" alt = "">
+          </div>
+          <div class = 'd-flex justify-content-center' style="margin: 10px;">Calculadora de média do semestre </div>
+          
+        </div>
+      </div>
+    </section>
+    <section class = 'box'>
+      <form id = 'form'>
+        <div class = 'form-group row'>
+          <div class = 'col-3'>
+            <h3>1° Nota</h3>
+            <input type = 'number' min = '0' max = '10' class = 'form-control' placeholder="Coloque a 1° Nota" id = 'primeiraNota'>
+          </div>
+          <div class = 'col-3'>
+            <h3>2° Nota</h3>
+            <input type = 'number' min = '0' max = '10' class = 'form-control' placeholder="Coloque a 2° Nota" id = 'segundaNota'>
+          </div>
+          <div class = 'col-3'>
+            <h3>3° Nota</h3>
+            <input type = 'number' min = '0' max = '10' class = 'form-control' placeholder="Coloque a 3° Nota" id = 'terceiraNota'>
+          </div>
+          <div class = 'col-3'>
+            <h3>4° Nota</h3>
+            <input type = 'number' min = '0' max = '10' class = 'form-control' placeholder="Coloque a 4° Nota" id = 'quartaNota'>
+          </div>
+        </div>
+      </form>
+      <button type="button" class="btn btn-primary" id = 'calcular' style="width: 100%; font-size: 30px; margin-top: 10px;" ><strong>Calcular</strong></button>
+      <div class = 'form-group row'>
+        <div class = 'col-md-12'>
+          <div class = 'card'>
+            <div class="card-body" style="color: black; margin: 5px;">
+              A média do semestre é: <span><strong id = 'resultado'> </strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class = 'container'>
+      <div class='row'>
+        <div class='d-flex justify-content-around' style="margin-top: 30px;">
+          <img id = 'icon-result' src = '../_img/envelope.png' width="300px" height="300px">
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
